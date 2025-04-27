@@ -146,13 +146,6 @@ io.on('connection', (socket) => {
   });
 });
 
-const cors = require('cors');
-
-app.use(cors({
-  origin: 'https://your-frontend.netlify.app', // your actual frontend Netlify URL
-  credentials: true
-}));
-
 
 // Start server
 const PORT = process.env.PORT || 3001;
